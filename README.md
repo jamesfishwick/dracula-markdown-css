@@ -4,6 +4,10 @@
 
 ![Screenshot](./screenshot.png)
 
+## Live Demo
+
+**[View the live demo →](https://jamesfishwick.github.io/dracula-markdown-css/)**
+
 ## About
 
 A standalone CSS stylesheet for styling rendered markdown with the Dracula color scheme. Use it anywhere you display markdown: static sites, documentation, blogs, or custom markdown renderers.
@@ -11,6 +15,16 @@ A standalone CSS stylesheet for styling rendered markdown with the Dracula color
 ## Install
 
 All instructions can be found at [draculatheme.com/markdown-css](https://draculatheme.com/markdown-css).
+
+### Quick Start
+
+```html
+<link rel="stylesheet" href="https://jamesfishwick.github.io/dracula-markdown-css/dracula-markdown.css">
+```
+
+Or download:
+- [`dracula-markdown.css`](./dracula-markdown.css) - Applies to all elements
+- [`dracula-markdown-scoped.css`](./dracula-markdown-scoped.css) - Scoped to `.dracula-markdown` class
 
 ## Team
 

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dracula Theme for Markdown CSS</title>
+    <link rel="stylesheet" href="dracula-markdown.css">
+    <style>
+        body {
+            max-width: 800px;
+        }
+        .header-links {
+            display: flex;
+            gap: 1em;
+            margin-bottom: 2em;
+            flex-wrap: wrap;
+        }
+        .header-links a {
+            padding: 0.5em 1em;
+            background: #44475a;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .header-links a:hover {
+            background: #6272a4;
+            text-decoration: none;
+        }
+        .color-swatch {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            border-radius: 3px;
+            vertical-align: middle;
+            margin-right: 0.3em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-links">
+    <a href="https://github.com/jamesfishwick/dracula-markdown-css">GitHub Repo</a>
+    <a href="https://draculatheme.com">Dracula Theme</a>
+    <a href="dracula-markdown.css" download>Download CSS</a>
+</div>
+
+<h1>Dracula Theme for Markdown</h1>
+
+<p>A dark theme for rendered markdown using the official <a href="https://draculatheme.com">Dracula</a> color palette. Use it anywhere you display markdown: static sites, documentation, blogs, or custom markdown renderers.</p>
+
+<h2>Installation</h2>
+
+<pre><code>&lt;link rel="stylesheet" href="dracula-markdown.css"&gt;</code></pre>
+
+<p>Or use the scoped version with a container class:</p>
+
+<pre><code>&lt;link rel="stylesheet" href="dracula-markdown-scoped.css"&gt;
+
+&lt;div class="dracula-markdown"&gt;
+    &lt;!-- Your markdown content --&gt;
+&lt;/div&gt;</code></pre>
+
+<h2>Text Formatting</h2>
+
+<p>Regular text looks like this. You can make text <strong>bold</strong> or <em>italic</em>, or even <strong><em>both</em></strong>. Here's some <code>inline code</code> and a <a href="#">link</a>.</p>
+
+<p>You can also use <del>strikethrough</del>, <mark>highlighted text</mark>, and <kbd>keyboard</kbd> inputs.</p>
+
+<h2>Blockquotes</h2>
+
+<blockquote>
+<p>The quick brown fox jumps over the lazy dog. This is a blockquote that shows how quoted text appears in the Dracula theme.</p>
+<p>Blockquotes can contain multiple paragraphs and other elements.</p>
+</blockquote>
+
+<h2>Lists</h2>
+
+<h3>Unordered</h3>
+<ul>
+    <li>First item</li>
+    <li>Second item
+        <ul>
+            <li>Nested item one</li>
+            <li>Nested item two</li>
+        </ul>
+    </li>
+    <li>Third item</li>
+</ul>
+
+<h3>Ordered</h3>
+<ol>
+    <li>First step</li>
+    <li>Second step
+        <ol>
+            <li>Sub-step A</li>
+            <li>Sub-step B</li>
+        </ol>
+    </li>
+    <li>Third step</li>
+</ol>
+
+<h3>Task List</h3>
+<ul>
+    <li><input type="checkbox" checked disabled> Completed task</li>
+    <li><input type="checkbox" checked disabled> Another done</li>
+    <li><input type="checkbox" disabled> Still to do</li>
+</ul>
+
+<h2>Code</h2>
+
+<h3>Inline</h3>
+<p>Use <code>console.log()</code> for debugging or <code>npm install dracula-theme</code> to install.</p>
+
+<h3>Block</h3>
+<pre><code>function greet(name) {
+    console.log(`Hello, ${name}!`);
+    return true;
+}
+
+// Call the function
+greet("Dracula");
+</code></pre>
+
+<h2>Tables</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Color</th>
+            <th>Hex</th>
+            <th>Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="color-swatch" style="background:#bd93f9"></span>Purple</td>
+            <td><code>#BD93F9</code></td>
+            <td>Headings</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#8be9fd"></span>Cyan</td>
+            <td><code>#8BE9FD</code></td>
+            <td>Links</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#50fa7b"></span>Green</td>
+            <td><code>#50FA7B</code></td>
+            <td>Code</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#ffb86c"></span>Orange</td>
+            <td><code>#FFB86C</code></td>
+            <td>Bold</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#f1fa8c"></span>Yellow</td>
+            <td><code>#F1FA8C</code></td>
+            <td>Italic</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#ff79c6"></span>Pink</td>
+            <td><code>#FF79C6</code></td>
+            <td>List markers</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#ff5555"></span>Red</td>
+            <td><code>#FF5555</code></td>
+            <td>Strikethrough</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background:#6272a4"></span>Comment</td>
+            <td><code>#6272A4</code></td>
+            <td>Blockquotes, borders</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Headings</h2>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<h2>Horizontal Rule</h2>
+
+<p>Content above the rule.</p>
+
+<hr>
+
+<p>Content below the rule.</p>
+
+<h2>Details/Summary</h2>
+
+<details>
+    <summary>Click to expand</summary>
+    <p>This is hidden content that appears when you click the summary. It can contain any markdown elements:</p>
+    <ul>
+        <li>Lists</li>
+        <li>Code: <code>example</code></li>
+        <li><a href="#">Links</a></li>
+    </ul>
+</details>
+
+<hr>
+
+<p><em>Built with the official <a href="https://spec.draculatheme.com/">Dracula color specification</a>.</em></p>
+
+</body>
+</html>
