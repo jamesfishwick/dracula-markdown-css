@@ -1,0 +1,345 @@
+/* Dracula Theme for Markdown (Scoped)
+ * https://draculatheme.com/markdown-css
+ *
+ * Wrap your markdown content in <div class="dracula-markdown">
+ *
+ * Color Palette (from https://spec.draculatheme.com/)
+ * Background:  #282A36
+ * Foreground:  #F8F8F2
+ * Selection:   #44475A
+ * Comment:     #6272A4
+ * Red:         #FF5555
+ * Orange:      #FFB86C
+ * Yellow:      #F1FA8C
+ * Green:       #50FA7B
+ * Purple:      #BD93F9
+ * Cyan:        #8BE9FD
+ * Pink:        #FF79C6
+ */
+
+.dracula-markdown {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f8f8f2;
+    background-color: #282a36;
+    padding: 2em;
+    border-radius: 6px;
+}
+
+.dracula-markdown * {
+    box-sizing: border-box;
+}
+
+/* Links - Cyan */
+.dracula-markdown a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+
+.dracula-markdown a:hover {
+    text-decoration: underline;
+}
+
+/* Headings - Purple */
+.dracula-markdown h1,
+.dracula-markdown h2,
+.dracula-markdown h3,
+.dracula-markdown h4,
+.dracula-markdown h5,
+.dracula-markdown h6 {
+    color: #bd93f9;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.dracula-markdown h1:first-child,
+.dracula-markdown h2:first-child,
+.dracula-markdown h3:first-child {
+    margin-top: 0;
+}
+
+.dracula-markdown h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #6272a4;
+    padding-bottom: 0.3em;
+}
+
+.dracula-markdown h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #6272a4;
+    padding-bottom: 0.3em;
+}
+
+.dracula-markdown h3 {
+    font-size: 1.25em;
+}
+
+.dracula-markdown h4 {
+    font-size: 1em;
+}
+
+.dracula-markdown h5 {
+    font-size: 0.875em;
+}
+
+.dracula-markdown h6 {
+    font-size: 0.85em;
+}
+
+/* Paragraphs */
+.dracula-markdown p {
+    margin: 0 0 1em 0;
+}
+
+/* Horizontal rules - Comment */
+.dracula-markdown hr {
+    background-color: #6272a4;
+    border: 0;
+    height: 0.25em;
+    margin: 1.5em 0;
+}
+
+/* Blockquotes - Comment */
+.dracula-markdown blockquote {
+    border-left: 0.25em solid #6272a4;
+    color: #6272a4;
+    padding: 0 1em;
+    margin: 0 0 1em 0;
+}
+
+.dracula-markdown blockquote > :first-child {
+    margin-top: 0;
+}
+
+.dracula-markdown blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/* Lists - Pink markers */
+.dracula-markdown ul,
+.dracula-markdown ol {
+    margin: 0 0 1em 0;
+    padding-left: 2em;
+}
+
+.dracula-markdown ul ul,
+.dracula-markdown ul ol,
+.dracula-markdown ol ol,
+.dracula-markdown ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.dracula-markdown ol ol,
+.dracula-markdown ul ol {
+    list-style-type: lower-roman;
+}
+
+.dracula-markdown ol ol ol,
+.dracula-markdown ol ul ol,
+.dracula-markdown ul ol ol,
+.dracula-markdown ul ul ol {
+    list-style-type: lower-alpha;
+}
+
+.dracula-markdown li {
+    margin-bottom: 0.25em;
+}
+
+.dracula-markdown li > p {
+    margin-top: 1em;
+}
+
+.dracula-markdown li::marker {
+    color: #ff79c6;
+}
+
+/* Definition lists */
+.dracula-markdown dl {
+    margin-bottom: 1em;
+}
+
+.dracula-markdown dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.dracula-markdown dd {
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Code - Green */
+.dracula-markdown code,
+.dracula-markdown pre,
+.dracula-markdown kbd,
+.dracula-markdown samp {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Monaco, "Courier New", monospace;
+}
+
+.dracula-markdown code {
+    background-color: #44475a;
+    color: #50fa7b;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+.dracula-markdown pre {
+    background-color: #44475a;
+    border-radius: 6px;
+    font-size: 0.9em;
+    line-height: 1.45;
+    overflow: auto;
+    padding: 1em;
+    margin: 0 0 1em 0;
+}
+
+.dracula-markdown pre code {
+    background-color: transparent;
+    color: #50fa7b;
+    border: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* Tables */
+.dracula-markdown table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0 0 1em 0;
+    overflow: auto;
+}
+
+.dracula-markdown table th {
+    font-weight: 600;
+}
+
+.dracula-markdown table td,
+.dracula-markdown table th {
+    border: 1px solid #6272a4;
+    padding: 0.5em 1em;
+}
+
+.dracula-markdown table tr {
+    background-color: #282a36;
+    border-top: 1px solid #6272a4;
+}
+
+.dracula-markdown table tr:nth-child(2n) {
+    background-color: #44475a;
+}
+
+/* Images */
+.dracula-markdown img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keyboard input */
+.dracula-markdown kbd {
+    background-color: #44475a;
+    border: 1px solid #6272a4;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #6272a4;
+    color: #f8f8f2;
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 1.4;
+    padding: 0.1em 0.4em;
+    vertical-align: middle;
+}
+
+/* Strong - Orange */
+.dracula-markdown strong,
+.dracula-markdown b {
+    font-weight: 600;
+    color: #ffb86c;
+}
+
+/* Emphasis - Yellow */
+.dracula-markdown em,
+.dracula-markdown i {
+    font-style: italic;
+    color: #f1fa8c;
+}
+
+/* Strikethrough */
+.dracula-markdown del,
+.dracula-markdown s {
+    color: #ff5555;
+    text-decoration: line-through;
+}
+
+/* Inserted text */
+.dracula-markdown ins {
+    color: #50fa7b;
+    text-decoration: underline;
+}
+
+/* Mark/highlight */
+.dracula-markdown mark {
+    background-color: #f1fa8c;
+    color: #282a36;
+    padding: 0.1em 0.2em;
+}
+
+/* Abbreviations */
+.dracula-markdown abbr[title] {
+    border-bottom: 1px dotted #6272a4;
+    cursor: help;
+    text-decoration: none;
+}
+
+/* Superscript/subscript */
+.dracula-markdown sup,
+.dracula-markdown sub {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.dracula-markdown sup {
+    top: -0.5em;
+}
+
+.dracula-markdown sub {
+    bottom: -0.25em;
+}
+
+/* Task lists */
+.dracula-markdown input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+/* Details/summary */
+.dracula-markdown details {
+    margin-bottom: 1em;
+}
+
+.dracula-markdown summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #bd93f9;
+}
+
+/* Footnotes */
+.dracula-markdown .footnotes {
+    font-size: 0.9em;
+    color: #6272a4;
+    border-top: 1px solid #6272a4;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+/* Selection */
+.dracula-markdown ::selection {
+    background-color: #44475a;
+    color: #f8f8f2;
+}
